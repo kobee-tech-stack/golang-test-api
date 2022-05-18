@@ -1,6 +1,6 @@
 module github.com/WeDias/golang-test-api
 
-go 1.18
+go 1.17
 
 require (
 	github.com/gofiber/fiber/v2 v2.32.0
