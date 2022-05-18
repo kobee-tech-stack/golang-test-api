@@ -1,0 +1,18 @@
+version: '3.7'
+services:
+  postgres-go:
+    container_name: postgres-go
+    restart: always
+    build: 
+      context: .
+      dockerfile: dockerfile.postgres
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+volumes:
+  db:
+    driver: local

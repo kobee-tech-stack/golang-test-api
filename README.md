@@ -58,9 +58,9 @@
   --url http://localhost:3000/api/v1/product \
   --header 'Content-Type: application/json' \
   --data '{
-	"name": "product1",
-	"price": 10.99,
-	"stock": 10
+    "name": "product1",
+    "price": 10.99,
+    "stock": 10
   }'
 
   # > {"id":1,"name":"product1","price":10.99,"stock":10}
@@ -94,9 +94,9 @@
   --url http://localhost:3000/api/v1/product/1 \
   --header 'Content-Type: application/json' \
   --data '{
-	"name": "a product",
-	"price": 8.99,
-	"stock": 5
+    "name": "a product",
+    "price": 8.99,
+    "stock": 5
   }'
 
   # > {"id":1,"name":"a product","price":8.99,"stock":5}
@@ -111,3 +111,16 @@
 
   # > {"id":1,"name":"a product","price":8.99,"stock":5}
   ```
+
+
+### Some useful commands
+- Download dependencies
+```js
+go mod tidy
+```
+
+- Start your module using the go mod init command.
+  https://go.dev/ref/mod#go-mod-init
+```js
+go mod init
+```

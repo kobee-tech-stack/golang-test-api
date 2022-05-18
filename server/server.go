@@ -23,6 +23,13 @@ func New() *fiber.App {
 
 	api := app.Group("/api/v1")
 	routes.SetupProductRoutes(api)
+	routes.SetupAnalyticsRoutes(api)
 
 	return app
 }
+
+/**
+github.com/Lightspeed-Systems/alertlib
+github.com/Lightspeed-Systems/platformservices
+github.com/Lightspeed-Systems/msgraph
+*/
