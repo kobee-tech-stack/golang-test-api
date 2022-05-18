@@ -115,12 +115,15 @@
 
 ### Some useful commands
 - Download dependencies
-```js
+```bash
 go mod tidy
 ```
 
 - Start your module using the go mod init command.
   https://go.dev/ref/mod#go-mod-init
-```js
+```bash
 go mod init
 ```
+
+#### Understand about dependencies
+- https://go.dev/doc/modules/managing-dependencies
